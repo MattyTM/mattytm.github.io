@@ -39,15 +39,15 @@
 </span>
 </span>
 <br>
-<div class="animated fadeInUp"><a href="https://www.youtube.com/watch?v=w0BJ6Xqbj3I"><b class="text2">2020</b></a></div>
+<div class="animated fadeInUp"><a href="https://www.youtube.com/watch?v=w0BJ6Xqbj3I"><b class="text2">2021</b></a></div>
 </body>
-<audio autoplay="" loop="" id="player">
-<source src="music.mp3">
 <script>
-		var audio = document.currentScript.parentElement;
-		audio.volume = 0.3;
-		</script>
-</audio>
+	var audio = new Audio("music.mp3");
+
+	document.onclick = function() {
+	  audio.play();
+	}
+</script>
 <script>
     update_clock();
 
